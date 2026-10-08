@@ -55,9 +55,9 @@ function EmailEnvelopeIcon() {
 }
 
 export default function Contact({ contact }: Props) {
-  const email = contact?.email ?? "jacopo.lombardo@outlook.com";
+  const email = contact?.email ?? "job@jacopolombardo.com";
   const linkedin = contact?.linkedin ?? "https://www.linkedin.com/in/jacopo-lombardo/";
-  const github = contact?.github ?? "https://github.com/JacoLombardo";
+  const github = contact?.github ?? "https://github.com/Tucanico";
   return (
     <motion.footer
       id="contact"

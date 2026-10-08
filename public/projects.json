@@ -9,9 +9,9 @@
     "shortText": "I thrive at the intersection of precision and creativity, whether in technology or gastronomy. After seven years as a Chef de Partie, leading teams across Europe in high-pressure kitchens, I returned to my first love: software engineering. My journey led me to 42 Berlin, where I honed low-level C programming, memory management, and autonomous problem-solving in a rigorous, peer-driven environment. I further solidified my skills with an 840-hour Full-Stack bootcamp, mastering modern web architecture. Most recently, as a Full-Stack Developer at Need4Deed, I built scalable features with Next.js and optimized systems for performance. My background in gastronomy taught me to stay cool under pressure, communicate clearly, and lead with a detail-oriented mindset, qualities I bring to every engineering team."
   },
   "contact": {
-    "email": "jacopo.lombardo@outlook.com",
+    "email": "job@jacopolombardo.com",
     "linkedin": "https://www.linkedin.com/in/jacopo-lombardo/",
-    "github": "https://github.com/JacoLombardo"
+    "github": "https://github.com/Tucanico"
   },
   "cv": {
     "professionalExperience": [
@@ -69,7 +69,7 @@
       "shortDescription": "Recipe finder with filters and favourites.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/get-a-recipe",
+      "repository": "https://github.com/Tucanico/get-a-recipe",
       "link": "https://get-a-recipe.vercel.app/"
     },
     {
@@ -83,7 +83,7 @@
       "shortDescription": "Social network for Berlin city and U-Bahn content.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/berlin-fantastic-creatures",
+      "repository": "https://github.com/Tucanico/berlin-fantastic-creatures",
       "link": "https://berlin-fantastic-creatures.vercel.app/"
     },
     {
@@ -97,7 +97,7 @@
       "shortDescription": "Interactive AoE2 encyclopedia with favourites.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/age-of-empires-2",
+      "repository": "https://github.com/Tucanico/age-of-empires-2",
       "link": "https://age-of-empires-2.vercel.app/"
     },
     {
@@ -118,7 +118,7 @@
       "shortDescription": "REST API and docs for AoE2 game data.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/age-of-empires-2-API",
+      "repository": "https://github.com/Tucanico/age-of-empires-2-API",
       "link": "https://age-of-empires-2-api-documentation.vercel.app/"
     },
     {
@@ -132,7 +132,7 @@
       "shortDescription": "Learning and community platform for Code Academy Berlin.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/CODAC-berlin",
+      "repository": "https://github.com/Tucanico/CODAC-berlin",
       "link": ""
     },
     {
@@ -153,7 +153,7 @@
       "shortDescription": "E-commerce demo for kitchen appliances.",
       "isShared": false,
       "highlighted": true,
-      "repository": "https://github.com/JacoLombardo/squisito",
+      "repository": "https://github.com/Tucanico/squisito",
       "link": "https://squisito-one.vercel.app/"
     },
     {
@@ -167,7 +167,7 @@
       "shortDescription": "AI-generated dad jokes from chosen words.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/bad-jokes",
+      "repository": "https://github.com/Tucanico/bad-jokes",
       "link": "https://very-bad-jokes.vercel.app/"
     },
     {
@@ -188,7 +188,7 @@
       "shortDescription": "Chat with Claudia and take photos with her silhouette.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/ciao-claudia",
+      "repository": "https://github.com/Tucanico/ciao-claudia",
       "link": "https://ciao-claudia.vercel.app/"
     },
     {
@@ -216,7 +216,7 @@
       "shortDescription": "Custom C library — reimplemented libc basics and linked lists.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/42_libft",
+      "repository": "https://github.com/Tucanico/42_libft",
       "link": ""
     },
     {
@@ -230,7 +230,7 @@
       "shortDescription": "Reimplementation of printf with format parsing and variadic arguments.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/42_ft-printf",
+      "repository": "https://github.com/Tucanico/42_ft-printf",
       "link": ""
     },
     {
@@ -244,7 +244,7 @@
       "shortDescription": "Line-by-line file reader with configurable buffer and multi-fd support.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/42_get-next-line",
+      "repository": "https://github.com/Tucanico/42_get-next-line",
       "link": ""
     },
     {
@@ -258,7 +258,7 @@
       "shortDescription": "Secure Linux VM with LVM, encryption, SSH, and hardening.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/42_Born2beroot",
+      "repository": "https://github.com/Tucanico/42_Born2beroot",
       "link": ""
     },
     {
@@ -272,7 +272,7 @@
       "shortDescription": "Sorts integers with two stacks and a minimal set of operations.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/42_push-swap",
+      "repository": "https://github.com/Tucanico/42_push-swap",
       "link": ""
     },
     {
@@ -286,7 +286,7 @@
       "shortDescription": "3D wireframe terrain viewer from elevation maps (isometric).",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/42_FdF",
+      "repository": "https://github.com/Tucanico/42_FdF",
       "link": ""
     },
     {
@@ -300,7 +300,7 @@
       "shortDescription": "Client–server messaging using only Unix signals.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/42_minitalk",
+      "repository": "https://github.com/Tucanico/42_minitalk",
       "link": ""
     },
     {
@@ -314,7 +314,7 @@
       "shortDescription": "Dining Philosophers simulation with threads and mutexes.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/42_Philosophers",
+      "repository": "https://github.com/Tucanico/42_Philosophers",
       "link": ""
     },
     {
@@ -328,7 +328,7 @@
       "shortDescription": "Bash-like shell with pipes, redirections, built-ins, and signals.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/42_minishell",
+      "repository": "https://github.com/Tucanico/42_minishell",
       "link": ""
     },
     {
@@ -342,7 +342,7 @@
       "shortDescription": "Interactive TCP/IP and subnetting training (10 levels).",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/42_NetPractice",
+      "repository": "https://github.com/Tucanico/42_NetPractice",
       "link": ""
     },
     {
@@ -356,7 +356,7 @@
       "shortDescription": "Raycasting 3D engine with textured walls and .cub maps.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/42_cub3d",
+      "repository": "https://github.com/Tucanico/42_cub3d",
       "link": ""
     },
     {
@@ -370,7 +370,7 @@
       "shortDescription": "Ten C++ modules from OOP to templates and STL.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/42_CPP",
+      "repository": "https://github.com/Tucanico/42_CPP",
       "link": ""
     },
     {
@@ -384,7 +384,7 @@
       "shortDescription": "Docker stack: Nginx, MariaDB, WordPress with HTTPS.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/42_Inception",
+      "repository": "https://github.com/Tucanico/42_Inception",
       "link": ""
     },
     {
@@ -398,7 +398,7 @@
       "shortDescription": "HTTP server in C++98 with config file and CGI.",
       "isShared": false,
       "highlighted": true,
-      "repository": "https://github.com/JacoLombardo/42_webserv",
+      "repository": "https://github.com/Tucanico/42_webserv",
       "link": ""
     },
     {
@@ -412,7 +412,7 @@
       "shortDescription": "Full-stack Pong with WebSockets, OAuth, and blockchain.",
       "isShared": false,
       "highlighted": true,
-      "repository": "https://github.com/JacoLombardo/42_ft_transcendence",
+      "repository": "https://github.com/Tucanico/42_ft_transcendence",
       "link": ""
     },
     {
@@ -433,7 +433,7 @@
       "shortDescription": "A full-stack multiplayer Pong game, refactored for lightweight, scalable deployment on modern cloud platforms.",
       "isShared": false,
       "highlighted": false,
-      "repository": "https://github.com/JacoLombardo/transcendence-lite",
+      "repository": "https://github.com/Tucanico/transcendence-lite",
       "link": "https://transcendence-lite.vercel.app/"
     },
     {
@@ -454,7 +454,7 @@
       "shortDescription": "Desktop catalog for video and movie libraries.",
       "isShared": true,
       "highlighted": true,
-      "repository": "https://github.com/JacoLombardo/vid-base",
+      "repository": "https://github.com/Tucanico/vid-base",
       "link": ""
     },
     {

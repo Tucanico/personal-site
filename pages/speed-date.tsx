@@ -213,7 +213,7 @@ export default function SpeedDatePage({
           <p className={styles.sd_contact_heading}>Let&apos;s connect</p>
           <div className={styles.sd_contact_icons}>
             <a
-              href="https://github.com/JacoLombardo"
+              href="https://github.com/Tucanico"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.sd_contact_link}
@@ -231,7 +231,7 @@ export default function SpeedDatePage({
               <LinkedInIcon />
             </a>
             <a
-              href="mailto:jacopo.lombardo@outlook.com"
+              href="mailto:job@jacopolombardo.com"
               className={styles.sd_contact_link}
               aria-label="Email"
             >
