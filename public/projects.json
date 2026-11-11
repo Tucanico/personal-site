@@ -162,7 +162,7 @@
       "domain": "web",
       "type": "independent",
       "ring": 4,
-      "tech_stack": ["Next.js", "TypeScript", "MongoDB", "Bootstrap", "Vercel"],
+      "tech_stack": ["Next.js", "TypeScript", "Mistral AI", "Bootstrap", "Vercel"],
       "description": "A light-hearted web app where users choose up to three words to steer an AI-generated dad joke. The result is shown in a comic-style modal with sound and an animated avatar, for a playful, shareable experience.",
       "shortDescription": "AI-generated dad jokes from chosen words.",
       "isShared": false,
@@ -703,7 +703,6 @@
       "projects": [
         "age-of-empires-2-api",
         "squisito",
-        "bad-jokes",
         "ciao-claudia"
       ],
       "alwaysShown": true,
@@ -883,6 +882,17 @@
       ],
       "alwaysShown": false,
       "icon": "https://res.cloudinary.com/dtl48kr1u/image/upload/v1790330933/personal-site/icons/RevenueCat_lokomm.png"
+    },
+    {
+      "id": "mistral-ai",
+      "name": "Mistral AI",
+      "type": "Platform",
+      "level": "Familiar",
+      "projects": [
+        "bad-jokes"
+      ],
+      "alwaysShown": false,
+      "icon": "/Icons/Stack/MistralAI.png"
     }
   ]
 }
