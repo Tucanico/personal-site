@@ -52,7 +52,7 @@ function filterTint(t: FilterOption) {
 }
 
 interface Props {
-  /** Raw project documents (e.g. from MongoDB), same shape as JsonProject. */
+  /** Raw projects from public/projects.json, same shape as JsonProject. */
   projects: JsonProject[];
 }
 
