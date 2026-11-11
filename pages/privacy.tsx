@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
-import clientPromise from "@/lib/mongodb";
+import { getContent } from "@/lib/content";
 import styles from "@/styles/project.module.css";
 
 interface ContentDoc {
@@ -39,13 +39,7 @@ export default function Privacy({ intro, contact }: Props) {
 }
 
 export async function getStaticProps() {
-  const client = await clientPromise;
-  const db = client.db("personal-site");
-  const contentColl = db.collection("content");
-  const [introDoc, contactDoc] = await Promise.all([
-    contentColl.findOne({ _id: "intro" } as Record<string, unknown>),
-    contentColl.findOne({ _id: "contact" } as Record<string, unknown>),
-  ]);
+  const { intro: introDoc, contact: contactDoc } = getContent();
   const intro = introDoc && "name" in introDoc ? { name: (introDoc as ContentDoc).name ?? "" } : null;
   const contact = contactDoc && "linkedin" in contactDoc ? { linkedin: (contactDoc as ContentDoc).linkedin ?? "" } : null;
   return { props: { intro, contact } };

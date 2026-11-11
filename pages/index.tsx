@@ -6,7 +6,7 @@ import NavBar from "@/components/NavBar";
 import Projects from "@/components/projects/Projects";
 import SpeedDatePopup from "@/components/SpeedDatePopup";
 import Technologies from "@/components/technologies/Technologies";
-import clientPromise from "@/lib/mongodb";
+import { getContent } from "@/lib/content";
 import type { CvData, CvEntry } from "@/types";
 import type { JsonProject } from "@/components/projects/projectsData";
 
@@ -69,17 +69,14 @@ export default function Home({ projects, intro, aboutMe, contact, cv, technologi
 }
 
 export async function getStaticProps() {
-  const client = await clientPromise;
-  const db = client.db("personal-site");
-  const contentColl = db.collection("content");
-  const [projects, introDoc, aboutMeDoc, contactDoc, cvDoc, technologiesList] = await Promise.all([
-    db.collection("projects").find({}, { projection: { _id: 0 } }).toArray(),
-    contentColl.findOne({ _id: "intro" } as Record<string, unknown>),
-    contentColl.findOne({ _id: "about-me" } as Record<string, unknown>),
-    contentColl.findOne({ _id: "contact" } as Record<string, unknown>),
-    contentColl.findOne({ _id: "cv" } as Record<string, unknown>),
-    db.collection("technologies").find({}).toArray(),
-  ]);
+  const {
+    projects,
+    intro: introDoc,
+    "about-me": aboutMeDoc,
+    contact: contactDoc,
+    cv: cvDoc,
+    technologies: technologiesList,
+  } = getContent();
   const intro = introDoc ? { name: introDoc.name, title: introDoc.title, photo: introDoc.photo } : null;
   const aboutMe = aboutMeDoc && "text" in aboutMeDoc ? { text: aboutMeDoc.text } : null;
   const contact = contactDoc ? { email: contactDoc.email, linkedin: contactDoc.linkedin, github: contactDoc.github } : null;
@@ -90,7 +87,7 @@ export async function getStaticProps() {
         languages: (cvDoc.languages as string[] | undefined) ?? [],
       }
     : null;
-  const technologies: TechData[] = ((technologiesList as unknown as Record<string, unknown>[]) ?? []).map((t) => ({
+  const technologies: TechData[] = technologiesList.map((t) => ({
     id: t.id as string,
     name: t.name as string,
     type: t.type as string,
