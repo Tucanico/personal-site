@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useState, useCallback } from "react";
 import NavBar from "@/components/NavBar";
-import clientPromise from "@/lib/mongodb";
+import { getContent } from "@/lib/content";
 import styles from "@/styles/speeddate.module.css";
 import projectStyles from "@/styles/project.module.css";
 
@@ -283,15 +283,7 @@ export default function SpeedDatePage({
 }
 
 export async function getStaticProps() {
-  const client = await clientPromise;
-  const db = client.db("personal-site");
-  const contentColl = db.collection("content");
-  const [raw, aboutMeDoc, introDoc, contactDoc] = await Promise.all([
-    db.collection("projects").find({}).toArray(),
-    contentColl.findOne({ _id: "about-me" } as Record<string, unknown>),
-    contentColl.findOne({ _id: "intro" } as Record<string, unknown>),
-    contentColl.findOne({ _id: "contact" } as Record<string, unknown>),
-  ]);
+  const { projects: raw, "about-me": aboutMeDoc, intro: introDoc, contact: contactDoc } = getContent();
   const aboutText =
     aboutMeDoc && "shortText" in aboutMeDoc && typeof aboutMeDoc.shortText === "string"
       ? aboutMeDoc.shortText
