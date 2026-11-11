@@ -1,5 +1,5 @@
 /**
- * Processes the projects from MongoDB for the orbital layout and list views.
+ * Processes the projects from public/projects.json for the orbital layout and list views.
  * Projects.tsx uses this module and passes the results to Orbits and List.
  */
 
@@ -245,7 +245,7 @@ export function processOrbitalData(raw: JsonProject[], mobile = false): OrbitalD
 }
 
 /**
- * Returns processed orbital data from a projects array (e.g. from MongoDB).
+ * Returns processed orbital data from a projects array (from public/projects.json).
  * @param mobile - If true, orbit groups are stacked vertically for mobile layout.
  */
 export function getOrbitalData(projects: JsonProject[], mobile = false): OrbitalData {
@@ -264,7 +264,7 @@ function jsonToProjectCategory(p: JsonProject): ProjectCategory {
 }
 
 /**
- * Converts raw project objects from MongoDB into Project[] for List.
+ * Converts raw project objects from public/projects.json into Project[] for List.
  */
 export function convertToProjectList(raw: JsonProject[]): Project[] {
   if (!raw || !Array.isArray(raw)) return [];

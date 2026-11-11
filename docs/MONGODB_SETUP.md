@@ -1,6 +1,6 @@
 # MongoDB Atlas – New cluster setup
 
-Use this when creating a new cluster because the old one is gone or not working.
+Use this when creating a new cluster because the old one is gone or not working. The site uses MongoDB only to store visits.
 
 ## 1. Create a new cluster
 
@@ -47,24 +47,12 @@ MONGODB_URI=mongodb+srv://YOUR_USER:YOUR_PASSWORD@cluster0.XXXXX.mongodb.net/?re
 
 Restart the dev server after changing `.env.local`.
 
-## 6. Load the content
+## 6. Visits
 
-The site reads the `personal-site` database:
+The visit logger ([pages/api/visit.ts](../pages/api/visit.ts)) writes one document per browser session to the `visitors` collection of the `personal-site` database. Atlas creates the database and the collection on the first write, so a new cluster needs nothing beyond the steps above.
 
-- `projects`: one document per project
-- `technologies`: the technologies section
-- `content`: the `intro`, `about-me`, `contact` and `cv` documents
+The site's content is not in MongoDB: the pages and the sitemap read [public/projects.json](../public/projects.json) at build time.
 
-All of it comes from [public/projects.json](../public/projects.json). After editing that file, push it with:
+## 7. Production
 
-```bash
-npm run push-json
-```
-
-This replaces the `projects` and `technologies` collections and the four `content` documents with what is in the JSON file. It reads `MONGODB_URI` from `.env.local`.
-
-## 7. Rebuild
-
-Everything is read at build time, so changes show up after the next build: `npm run build` locally, or the next Vercel deploy in production.
-
-If MongoDB can't be reached, the build fails with "Could not connect to MongoDB (…)" instead of deploying empty pages. A free cluster that Atlas has paused fails this way: resume it in Atlas, wait for it to come up, and build again.
+Set the same `MONGODB_URI` in the Vercel project settings and redeploy. The build doesn't connect to MongoDB; only the visit logger does, per request. If the cluster is paused, the site keeps working and visits are not recorded until it is resumed.

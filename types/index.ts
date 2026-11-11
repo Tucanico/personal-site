@@ -19,7 +19,7 @@ export const CATEGORY_LABELS: Record<ProjectCategory, string> = {
   "42berlin": "42Berlin",
 };
 
-/** CV section content from content.cv (MongoDB) */
+/** CV section content from the cv entry of public/projects.json */
 export interface CvEntry {
   title: string;
   meta: string;
