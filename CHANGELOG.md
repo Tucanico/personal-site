@@ -16,6 +16,10 @@ Body paragraph: what changed and why. Reference files with [path](path) links.
 
 ---
 
+## 2026-11-12 09:59 — chore(content): remove the 2023 CV PDF
+
+Deleted `public/Jacopo Lombardo.pdf`, a one-page Canva export from 2023. No page linked to it, but everything in `public/` is served, so it was still downloadable at `/Jacopo%20Lombardo.pdf` with the old `jacopo.lombardo@outlook.com` address; the site everywhere else uses `job@jacopolombardo.com`.
+
 ## 2026-11-12 09:12 — chore(deps): React 19 and react-bootstrap 2.10
 
 Moved to React and React DOM 19.3.1 (with `@types/react` and `@types/react-dom` 19.3.0) because Next.js 16.4 warns that React 18 support is deprecated and goes away in Next.js 17. react-bootstrap went from 2.8.0 to 2.10.10: 2.8.0 pulled in `@react-aria/ssr` 3.8.0, whose peer range stops at React 18. No code used anything React 19 removed (`defaultProps` or `propTypes` on function components, string refs, legacy context, `ReactDOM.render`, `useRef` without an argument), and the type check passes on the 19 types. The generated pages are identical to the React 18 build, markup and data. In the browser, the home, quick tour, privacy and a project page show no console errors or hydration warnings at 1440, 390 and 320 px and match the live site in screenshots, and the speed-date popup, the mobile menu, the Orbits/List toggle and the quick tour arrows behave as they do on the live site. The minimatch finding from `npm audit` stays open: its fix is only in minimatch 11, and even the latest `@typescript-eslint/typescript-estree` requires `^10.2.2`.
